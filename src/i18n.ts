@@ -1,11 +1,11 @@
 import i18n from 'i18next';
 import { reactI18nextModule } from 'react-i18next';
 
+import enTranslation from './locales/en.json';
+
 const resources = {
     en: {
-        translation: {
-            'Welcome to this app' : 'Velkommen til denne appen'
-        }
+        translation: enTranslation
     }
 };
 

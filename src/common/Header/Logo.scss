@@ -1,0 +1,15 @@
+@import '../../index.scss';
+
+.title {
+  font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+  font-size: 60px;
+  color: #225E77;
+  font-weight: lighter;
+  font-style: oblique;
+  padding: 1rem;
+}
+
+.remove-link-decoration {
+  outline: none;
+  text-decoration: none;
+}

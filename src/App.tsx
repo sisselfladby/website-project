@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
-import { withNamespaces, WithNamespaces } from 'react-i18next';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Homepage from './pages/Home';
+import BusinessCase from './pages/BusinessCase';
 
-class App extends Component<WithNamespaces> {
+class App extends Component {
   render() {
-    console.log(this.props);
     return (
-        <div>{this.props.t('Welcome to this app')}</div>
+        <Router>
+            <Switch>
+                <Route path='/business' component={() => <BusinessCase/>}/>
+                <Route path='/' component={() => <Homepage/>}/>
+            </Switch>
+        </Router>
     );
   }
 }
 
-export default withNamespaces()(App);
+export default App;
