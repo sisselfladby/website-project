@@ -1,5 +1,10 @@
 @import '../../index.scss';
 
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
 .header {
     background-color: $color-primary-0;
     height: 150px;
@@ -7,22 +12,33 @@
 }
 
 .header-content {
-    @extend %flex-row;
+    @include flex-row;
     bottom: 0;
     position: absolute;
-}
 
-%flex-row {
-    display: flex;
-    flex-direction: row;
+    @media screen and (max-width: $small-tablet) {
+        flex-direction: column;
+
+        .menu {
+            bottom: 1rem;
+            position: relative;
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: $small-tablet+1) {
+        .menu {
+            bottom: 0;
+        }
+    }
+
+
 }
 
 .menu {
-    bottom: 1rem;
     position: absolute;
     list-style-type: none;
-    margin: 0;
-    @extend %flex-row;
+    @include flex-row;
 }
 
 .menu-item {
