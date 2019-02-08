@@ -6,10 +6,23 @@
   color: #225E77;
   font-weight: lighter;
   font-style: oblique;
-  padding: 1rem;
+  padding-left: 1rem;
 }
 
-.remove-link-decoration {
+%remove-link-decoration {
   outline: none;
   text-decoration: none;
+}
+
+%remove-h1-padding {
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.logo-wrapper {
+  padding-bottom: 1rem;
+  @extend %remove-link-decoration;
+  @extend %remove-h1-padding;
 }

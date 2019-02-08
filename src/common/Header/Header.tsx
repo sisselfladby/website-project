@@ -7,12 +7,12 @@ import Container from "../Container/Container";
 
 const Header = (props: WithNamespaces) => (
     <div className="header">
-        <Container className="flex-row">
+        <Container className="header-content">
             <Logo/>
             <nav>
-                <ul>
-                    <li><Link to='/home'>{props.t('title.home')}</Link></li>
-                    <li><Link to='/business'>{props.t('title.business')}</Link></li>
+                <ul className="menu">
+                    <li className="menu-item"><Link to='/home'>{props.t('title.home')}</Link></li>
+                    <li className="menu-item"><Link to='/business'>{props.t('title.business')}</Link></li>
                 </ul>
             </nav>
         </Container>

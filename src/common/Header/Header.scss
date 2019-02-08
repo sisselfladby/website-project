@@ -2,9 +2,30 @@
 
 .header {
     background-color: $color-primary-0;
+    height: 150px;
+    position: relative;
 }
 
-.flex-row {
+.header-content {
+    @extend %flex-row;
+    bottom: 0;
+    position: absolute;
+}
+
+%flex-row {
     display: flex;
     flex-direction: row;
+}
+
+.menu {
+    bottom: 1rem;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    @extend %flex-row;
+}
+
+.menu-item {
+    padding-right: 1rem;
+    flex: 0 0 auto;
 }
