@@ -1,15 +1,13 @@
 import React from 'react';
 import {withNamespaces, WithNamespaces} from 'react-i18next';
-import Header from '../common/Header/Header';
-import Footer from "../common/Footer/Footer";
+import Page from "./Page";
 
 class Home extends React.PureComponent<WithNamespaces> {
     render() {
         return (
-            <>
-                <Header/>
-                <Footer/>
-            </>
+            <Page>
+                <a className="link" href="lala">Dette er en link</a>
+            </Page>
         );
     }
 }

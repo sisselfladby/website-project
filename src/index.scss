@@ -6,17 +6,17 @@
 
 /* As hex codes */
 
-$color-primary-0: #ADD8E6;	/* Main Primary color */
-$color-primary-1: #FDFFFF;
-$color-primary-2: #DAF0F8;
-$color-primary-3: #7EB8CB;
-$color-primary-4: #5190A5;
+$color-primary-0: #5190A5;	// Main Primary color - brukes */
+$color-primary-1: #B4D9E5; // brukes
+$color-primary-2: #7EB5C7;
+$color-primary-3: #34788E;
+$color-primary-4: #1A5E75;
 
-$color-complement-0: #FFDFBD; 	/* Main Complement color */
-$color-complement-1: #FFFEFD;
-$color-complement-2: #FFF0E0;
-$color-complement-3: #FFCE9A;
-$color-complement-4: #FFBD77;
+$color-complement-0: #FFBD78;	// Main Complement color */
+$color-complement-1: #FFE4C7;
+$color-complement-2: #FFD09E;
+$color-complement-3: #E49B4E;
+$color-complement-4: #7D4C17; // brukes!
 
 .text-color { color: rgba(0, 0, 0, 0.5)}
 
@@ -34,6 +34,18 @@ $small-tablet: 540px;
   max-width: 1260px;
 }
 
-#root {
+.link {
+  color: $color-primary-4;
+   &:focus {
+     outline: 1px dotted grey;
+     background: $color-complement-2;
+   }
+  &:hover {
+    text-decoration: none;
+    background: $color-complement-1;
+  }
+}
+
+body {
   background-color: $color-primary-1;
 }

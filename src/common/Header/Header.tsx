@@ -11,8 +11,8 @@ const Header = (props: WithNamespaces) => (
             <Logo/>
             <nav>
                 <ul className="menu">
-                    <li className="menu-item"><Link to='/home'>{props.t('title.home')}</Link></li>
-                    <li className="menu-item"><Link to='/business'>{props.t('title.business')}</Link></li>
+                    <li className="menu-item"><Link className="link" to='/home'>{props.t('title.home')}</Link></li>
+                    <li className="menu-item"><Link className="link" to='/business'>{props.t('title.business')}</Link></li>
                 </ul>
             </nav>
         </Container>
