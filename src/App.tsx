@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Homepage from './pages/Home';
-import BusinessCase from './pages/BusinessCase';
 
 const App = () => {
+  const Homepage = React.lazy(() => import('./pages/Home'));
+  const BusinessCase = React.lazy(() => import('./pages/BusinessCase'));
+
   return (
     <div id="app">
       <Router>
-        <Switch>
-            <Route path='/business' component={() => <BusinessCase/>}/>
-            <Route path='/' component={() => <Homepage/>}/>
-        </Switch>
+        <Suspense fallback={"...loading"}>
+          <Switch>
+              <Route path='/business' component={() => <BusinessCase/>}/>
+              <Route path='/' component={() => <Homepage/>}/>
+          </Switch>
+        </Suspense>
       </Router>
     </div>
   );
