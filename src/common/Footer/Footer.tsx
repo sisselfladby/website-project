@@ -1,11 +1,14 @@
 import React from 'react';
-import {withNamespaces, WithNamespaces} from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import './Footer.scss';
 
-const Footer = (props: WithNamespaces) => (
-    <div className="footer">
-        <h1>{props.t('title.footer')}</h1>
-    </div>
-);
+const Footer = () => {
+    const { t } = useTranslation();
+    return (
+        <div className="footer">
+            <h1>{t('title.footer')}</h1>
+        </div>
+    );
+};
 
-export default withNamespaces()(Footer);
+export default Footer;
