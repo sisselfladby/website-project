@@ -8,7 +8,7 @@ import Container from "../Container/Container";
 const Header = () => {
   const { t } = useTranslation();
   return (
-    <div className="header">
+    <header className="header">
       <Container className="header-content">
         <Logo/>
         <nav>
@@ -18,7 +18,7 @@ const Header = () => {
           </ul>
         </nav>
       </Container>
-    </div>
+    </header>
   );
 };
 

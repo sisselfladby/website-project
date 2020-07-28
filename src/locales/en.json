@@ -1,5 +1,11 @@
 {
   "title.home": "HOMEPAGE",
   "title.business": "BUSINESS CASE",
-  "title.footer": "Footer"
+  "title.footer": "Footer",
+  "content1.title": "What is Flapump?",
+  "content1.homepage": "Flapump is a downhole hydraulic oil well pump designed to handle the high capacity production needs (0-10.0000 bpd) of offshore wells from early stages to late stages in the life of a well. That is because pump head and production rate can be adjusted continuously and independently from 0-100% capacity with changing well conditions without loss of efficiency, without workover and without reducing the service life of a pump. During the engineering phase the key idea was to think robustness in every step. We have combined what we believe are the best ideas behind the beam pump and a linear motor we have developed as a drive for high pressure pumps.",
+  "content2.title": "The Design",
+  "content2.homepage": "The result is a tandem design with one motor pushing the pump piston while another is pulling, ensuring minimal load on the piston rod. The design features only two moving parts, no bearings so that the pump can be horizontal or have any other orientation, the pump house has higher internal pressure than the surroundings so that foreign particles cannot enter into the closed circuit stream of hydraulic oil, the pump is slow moving with few strokes per minute and the simple geometry enables extensive use of wear- and corrosion resistant materials.",
+  "content3.title": "Efficiency",
+  "content3.homepage": "The simple piston design features another major benefit in the capability to handle high gas-liquid-ratio. Very low dead volume and long stroke length gives very high compression ratio minimizing loss of efficiency and elimininates risk of gas locking. It can even be used to dewater gas wells. Because Flapump can operate without pressure at the pump intake, it can operate down to near reservoir depletion."
 }
